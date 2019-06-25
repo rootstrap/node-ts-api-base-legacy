@@ -17,8 +17,9 @@ export class UserRepository {
     return await this.getRepository().save(user);
   }
 
-  public update(id: number, params: any) {
-    return this.getRepository().update(id, params);
+  public async update(id: number, params: any) {
+    await this.getRepository().update(id, params);
+    return this.getRepository().findOne(id);
   }
 
   private getRepository() {

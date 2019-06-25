@@ -25,8 +25,7 @@ export class UserService {
 
   public async update(id: number, userParams: any) {
     const params = validateUserUpdate(userParams);
-    const user = User.fromJson(params);
-    return this.repository.update(id, user);
+    return this.repository.update(id, params);
   }
 }
 
