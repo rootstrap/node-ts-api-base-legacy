@@ -1,6 +1,6 @@
 import User from '../models/User';
 import userRepository, { UserRepository } from '../repositories/UserRepository';
-import logger from '../utils/logger';
+import { validateUser, validateUserUpdate } from '../validations/UserValidation';
 
 export class UserService {
   private repository: UserRepository;
@@ -18,12 +18,14 @@ export class UserService {
   }
 
   public async create(userParams: any) {
-    const user = User.fromJson(userParams);
+    const params = validateUser(userParams);
+    const user = User.fromJson(params);
     return await this.repository.create(user);
   }
 
   public async update(id: number, userParams: any) {
-    const user = await this.repository.findOne(id);
+    const params = validateUserUpdate(userParams);
+    const user = User.fromJson(params);
     return this.repository.update(id, user);
   }
 }

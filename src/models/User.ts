@@ -25,14 +25,4 @@ export default class User {
 
     @Column()
     public email: string;
-
-    public serialize() {
-      return {
-        email: this.email,
-        firstName: this.lastName,
-        id: this.id,
-        lastName: this.lastName,
-      };
-    }
-
 }

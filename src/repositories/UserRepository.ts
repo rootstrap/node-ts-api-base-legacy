@@ -1,7 +1,6 @@
 import {
   FindConditions,
   getRepository,
-  Repository,
 } from 'typeorm';
 import User from '../models/User';
 
@@ -18,8 +17,8 @@ export class UserRepository {
     return await this.getRepository().save(user);
   }
 
-  public update(id: number, user: User) {
-    return this.getRepository().update(id, user);
+  public update(id: number, params: any) {
+    return this.getRepository().update(id, params);
   }
 
   private getRepository() {

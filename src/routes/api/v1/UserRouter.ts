@@ -1,4 +1,5 @@
 import express from 'express';
+import serializeUser from '../../../serializers/UserSerializer';
 import userService, { UserService } from '../../../services/UserService';
 
 export class UserRouter {
@@ -15,14 +16,14 @@ export class UserRouter {
     this.router.get('/', async (req, res) => {
       const users = await this.service.find(req.query);
       res.send({
-        users: users.map((user) => user.serialize()),
+        users: users.map((user) => serializeUser(user)),
       });
     });
 
     this.router.post('/', async (req, res) => {
       try {
         const user = await this.service.create(req.body);
-        res.send({ user: user.serialize() });
+        res.send({ user: serializeUser(user) });
       } catch (error) {
         res.send({ error });
       }
