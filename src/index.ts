@@ -4,6 +4,7 @@ import 'reflect-metadata';
 import createConnection from './db';
 import apiRouter from './routes';
 import logger from './utils/logger';
+import cors from './middlewares/cors';
 
 dotenv.config();
 
@@ -13,6 +14,7 @@ const port = process.env.PORT || 3000;
 createConnection()
   .then(() => {
     logger.info('Database connected sucessfuly');
+    app.use(cors);
     app.use('/api/v1', apiRouter);
     app.listen(port, () => {
       logger.info(`server started at port: ${port}`);
