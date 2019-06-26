@@ -2,7 +2,7 @@ import {
   FindConditions,
   getRepository,
 } from 'typeorm';
-import User from '../models/User';
+import User from '../user/User';
 
 export class UserRepository {
   public findOne(id: number) {

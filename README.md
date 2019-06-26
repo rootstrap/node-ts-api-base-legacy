@@ -9,19 +9,17 @@ The project is structured using a layered architecture, separating Persistence, 
 
 Models are used to define your database entities and are passed through layers before. Then, serializers are in charge of exposing the correct data to the end user (so, at router level in this case).
 
-The folder structure is the following:
+The folder structure is [component-based](https://github.com/i0natan/nodebestpractices/blob/master/sections/projectstructre/breakintcomponents.md).
+Assign a folder in your project root for each business component and make it self-contained - other components are allowed to consume its functionality only through its public interface or API (in this case, the `index.ts` file).
+
+Apart from that, the following folders are present:
 - `dist`: Stores all .js files built by the TypeScript compiler.
 - `public`: Exposes publicly hosted files.
 - `src`: Root folder for our codebase.
 - `constants`: Constant definition such as status codes, enums, etc.
 - `db`: Database related configurations and migration files.
 - `middlewares`: Express Middlewares.
-- `models`: Entity models (which are then mapped to the database).
-- `repositories`: Entity Repositories, ideally, one per entity.
-- `routes`: Root folder for our router, separated by version (so, `api/v1` will have all your `api/v1` exposed routes) this way you can keep more than one version up if needed.
-- `serializers`: Entity json serializers.
 - `utils`: Helpers such as loggers, date handling, etc.
-- `validations`: Json schema validations for each entity.
 - `tasks`: Used to store any standalone custom script that you would expose on your `package.json`
 
 ## Environment setup

@@ -19,7 +19,7 @@ module.exports = {
     "dist/db/subscribers/**/*.js"
   ],
   "cli": {
-    "entitiesDir": "src/db/models",
+    "entitiesDir": "src/",
     "migrationsDir": "src/db/migrations",
     "subscribersDir": "src/db/subscribers"
   }

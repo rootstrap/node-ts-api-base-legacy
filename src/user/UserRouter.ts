@@ -1,6 +1,6 @@
 import express from 'express';
-import serializeUser from '../../../serializers/UserSerializer';
-import userService, { UserService } from '../../../services/UserService';
+import serializeUser from './UserSerializer';
+import userService, { UserService } from './UserService';
 
 export class UserRouter {
   public router: express.Router;

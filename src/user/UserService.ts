@@ -1,6 +1,6 @@
-import User from '../models/User';
 import userRepository, { UserRepository } from '../repositories/UserRepository';
-import { validateUser, validateUserUpdate } from '../validations/UserValidation';
+import User from './User';
+import { validateUser, validateUserUpdate } from './UserValidation';
 
 export class UserService {
   private repository: UserRepository;

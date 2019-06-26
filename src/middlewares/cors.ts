@@ -1,15 +1,15 @@
 import cors from 'cors';
 
-const whitelist: String[] = [];
+const whitelist: string[] = [];
 
 const corsOptions = {
   origin: (origin: any, callback: any) => {
     if (whitelist.indexOf(origin) !== -1 || !origin) {
-      callback(null, true)
+      callback(null, true);
     } else {
-      callback(new Error('Not allowed by CORS'))
+      callback(new Error('Not allowed by CORS'));
     }
-  }
-}
+  },
+};
 
 export default cors(corsOptions);

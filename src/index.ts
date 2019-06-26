@@ -2,9 +2,9 @@ import dotenv from 'dotenv';
 import express from 'express';
 import 'reflect-metadata';
 import createConnection from './db';
+import cors from './middlewares/cors';
 import apiRouter from './routes';
 import logger from './utils/logger';
-import cors from './middlewares/cors';
 
 dotenv.config();
 
