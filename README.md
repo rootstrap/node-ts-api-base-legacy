@@ -65,3 +65,14 @@ The following features are planned to be added:
 - [ ] Session management using Passport.
 - [ ] Background jobs example setup.
 
+## License
+
+**Node-ts-api-base** is available under the MIT license. See the LICENSE file for more info.
+
+**NOTE:** Remove the free LICENSE file for private projects or replace it with the corresponding license.
+
+## Credits
+
+**Node-ts-api-base** is maintained by [Rootstrap](http://www.rootstrap.com) with the help of our [contributors](https://github.com/rootstrap/node-ts-api-base/contributors).
+
+[<img src="https://s3-us-west-1.amazonaws.com/rootstrap.com/img/rs.png" width="100"/>](http://www.rootstrap.com)
