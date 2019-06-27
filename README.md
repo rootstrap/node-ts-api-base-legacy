@@ -67,7 +67,7 @@ The following features are planned to be added:
 
 ## License
 
-Node-ts-api-base is available under the MIT license. See the LICENSE file for more info.
+**Node-ts-api-base** is available under the MIT license. See the LICENSE file for more info.
 
 **NOTE:** Remove the free LICENSE file for private projects or replace it with the corresponding license.
 
