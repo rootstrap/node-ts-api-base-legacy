@@ -12,15 +12,20 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000;
 
+const runApp = () => {
+  app.set('view engine', 'pug');
+  app.use(cors);
+  app.use('/api/v1', apiRouter);
+  app.use(errorMiddleware);
+  app.listen(port, () => {
+    logger.info(`server started at port: ${port}`);
+  });
+}
+
 createConnection()
   .then(() => {
     logger.info('Database connected sucessfuly');
-    app.use(cors);
-    app.use('/api/v1', apiRouter);
-    app.use(errorMiddleware);
-    app.listen(port, () => {
-      logger.info(`server started at port: ${port}`);
-    });
+    runApp();
   })
   .catch(
     (error: Error) => logger.error('Failed to setup database connection', error),
