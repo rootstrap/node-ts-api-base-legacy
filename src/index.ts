@@ -3,6 +3,7 @@ import express from 'express';
 import 'reflect-metadata';
 import createConnection from './db';
 import cors from './middlewares/cors';
+import errorMiddleware from './middlewares/ErrorMiddleware';
 import apiRouter from './routes';
 import logger from './utils/logger';
 
@@ -16,6 +17,7 @@ createConnection()
     logger.info('Database connected sucessfuly');
     app.use(cors);
     app.use('/api/v1', apiRouter);
+    app.use(errorMiddleware);
     app.listen(port, () => {
       logger.info(`server started at port: ${port}`);
     });
