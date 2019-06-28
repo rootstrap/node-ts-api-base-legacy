@@ -39,6 +39,7 @@
     "pg": "^7.11.0",
     "pino": "^5.12.6",
     "pino-pretty": "^3.2.0",
+    "pug": "^2.0.4",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.18"
   },
@@ -52,6 +53,7 @@
     "@types/mocha": "^5.2.7",
     "@types/node": "^12.0.10",
     "@types/pino": "^5.8.8",
+    "@types/pug": "^2.0.4",
     "@types/sinon-chai": "^3.2.2",
     "@types/supertest": "^2.0.7",
     "chai": "^4.2.0",
