@@ -8,7 +8,7 @@
     "tsc": "tsc",
     "build": "npm-run-all lint tsc",
     "dev": "concurrently -k -n ts,nodemon \"tsc -w\" \"nodemon dist/index.js | pino-pretty\"",
-    "start": "node dist/index.js",
+    "start": "pm2 start dist/index.js pm2.json",
     "typeorm:sync": "typeorm schema:sync",
     "typeorm:migrate": "typeorm migration:run",
     "typeorm:drop": "typeorm schema:drop",
@@ -41,6 +41,7 @@
     "pg": "^7.11.0",
     "pino": "^5.12.6",
     "pino-pretty": "^3.2.0",
+    "pm2": "^3.5.1",
     "pug": "^2.0.4",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.18"

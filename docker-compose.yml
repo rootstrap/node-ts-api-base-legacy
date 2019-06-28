@@ -16,7 +16,7 @@ services:
     build: .
     command: npm run build
     command: npm run db:migrate
-    command: npm run start
+    command: pm2-runtime start pm2.json
     volumes:
       - .:/code
     ports:

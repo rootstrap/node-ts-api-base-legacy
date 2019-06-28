@@ -1,4 +1,7 @@
-FROM node:10.16.0-alpine
+FROM keymetrics/pm2:latest-alpine
+# Bundle APP files
 RUN mkdir /code
 WORKDIR /code
 COPY . /code/
+# Install app dependencies
+ENV NPM_CONFIG_LOGLEVEL warn

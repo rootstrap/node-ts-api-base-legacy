@@ -2,12 +2,12 @@ import dotenv from 'dotenv';
 import express from 'express';
 import 'reflect-metadata';
 import createConnection from './db';
+import queues from './jobs';
+import { EmailJob } from './jobs/EmailProcessor';
 import cors from './middlewares/cors';
 import errorMiddleware from './middlewares/ErrorMiddleware';
 import apiRouter from './routes';
 import logger from './utils/logger';
-import queues from './jobs';
-import { EmailJob } from './jobs/EmailProcessor';
 
 dotenv.config();
 
@@ -26,7 +26,7 @@ const runApp = () => {
   } catch (error) {
     logger.error('Server shutdown with error:', error);
   }
-}
+};
 
 createConnection()
   .then(() => {
