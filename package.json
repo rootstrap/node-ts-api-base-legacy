@@ -33,6 +33,7 @@
   "dependencies": {
     "@hapi/joi": "^15.1.0",
     "body-parser": "^1.19.0",
+    "bull": "^3.10.0",
     "cors": "^2.8.5",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
@@ -45,6 +46,7 @@
     "typeorm": "^0.2.18"
   },
   "devDependencies": {
+    "@types/bull": "^3.5.15",
     "@types/chai": "^4.1.7",
     "@types/cors": "^2.8.5",
     "@types/dotenv": "^6.1.1",

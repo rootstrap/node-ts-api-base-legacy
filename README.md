@@ -1,7 +1,5 @@
 NodeJS & TypeScript Template
 =========================================
-[![CircleCI](https://circleci.com/gh/rootstrap/node-ts-api-base.svg?style=svg&circle-token=12fbfe9a6a1fb90e474929a782106c2d9f66a332)](https://circleci.com/gh/rootstrap/node-ts-api-base)
-<a href="https://codeclimate.com/repos/5d1610679537b8014d00bdc7/maintainability"><img src="https://api.codeclimate.com/v1/badges/205d43a0535bc6928adc/maintainability" /></a>
 ## Overview
 Node-TS is a base template created to help start new backend projects using NodeJS and TypeScript.
 The main objective is helping new projects start feature development by providing a base architecture and basic services setup, using standard tooling and best practices.
@@ -51,6 +49,7 @@ The following scripts are provided as tooling to interact with the database, tes
 - `dotenv`: https://github.com/motdotla/dotenv for environment management.
 - `pg`: https://github.com/motdotla/dotenv PostgreSQL adapter.
 - `body-parser`: https://github.com/expressjs/body-parser middleware json parsing.
+- `bull`: https://github.com/OptimalBits/bull#readme queue processing.
 - `nodemailer`: https://nodemailer.com/ as our mail engine.
 
 ### Test Dependencies
