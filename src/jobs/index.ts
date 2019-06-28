@@ -1,11 +1,11 @@
 import Queue from 'bull';
 import path from 'path';
-import connection from './connection';
+import queueConfig from './queueConfig';
 import { EmailJob } from './EmailProcessor';
 
 const ext = path.extname(__filename);
 
-const emailQueue = new Queue<EmailJob>('emailQueue', connection);
+const emailQueue = new Queue<EmailJob>('emailQueue', queueConfig);
 
 emailQueue.process(__dirname + '/EmailProcessor' + ext);
 

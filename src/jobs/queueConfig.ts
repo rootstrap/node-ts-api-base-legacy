@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const connection: QueueOptions = {
+const queueConfig: QueueOptions = {
   redis: {
     port: parseInt(process.env.REDIS_PORT),
     host: process.env.REDIS_HOST,
@@ -11,4 +11,4 @@ const connection: QueueOptions = {
   },
 };
 
-export default connection;
+export default queueConfig;
