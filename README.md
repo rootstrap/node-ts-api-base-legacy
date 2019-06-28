@@ -51,6 +51,7 @@ The following scripts are provided as tooling to interact with the database, tes
 - `dotenv`: https://github.com/motdotla/dotenv for environment management.
 - `pg`: https://github.com/motdotla/dotenv PostgreSQL adapter.
 - `body-parser`: https://github.com/expressjs/body-parser middleware json parsing.
+- `nodemailer`: https://nodemailer.com/ as our mail engine.
 
 ### Test Dependencies
 - `mocha`: https://mochajs.org/ as our testing framework.
@@ -63,7 +64,7 @@ The following features are planned to be added:
 
 - [ ] CircleCI configuration.
 - [ ] Docker configuration.
-- [ ] Error handling middleware.
+- [X] Error handling middleware.
 - [ ] Session management using Passport.
 - [ ] Background jobs example setup.
 
