@@ -5,7 +5,7 @@ import path from 'path';
 import sinon from 'sinon';
 import sinonChai from 'sinon-chai';
 import { Connection, createConnection, getConnectionOptions } from 'typeorm';
-import { entities } from '../src/db';
+import entities from '../src/db/Entities';
 
 dotenv.config({ path: path.resolve(process.cwd(), '.env.test') });
 

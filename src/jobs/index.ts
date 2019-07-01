@@ -1,7 +1,7 @@
 import Queue from 'bull';
 import path from 'path';
-import queueConfig from './queueConfig';
 import { EmailJob } from './EmailProcessor';
+import queueConfig from './queueConfig';
 
 const ext = path.extname(__filename);
 

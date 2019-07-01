@@ -18,6 +18,7 @@ Apart from that, the following folders are present:
 - `src`: Root folder for our codebase.
 - `constants`: Constant definition such as status codes, enums, etc.
 - `db`: Database related configurations and migration files.
+- `models`: All entity models.
 - `middlewares`: Express Middlewares.
 - `utils`: Helpers such as loggers, date handling, etc.
 - `tasks`: Used to store any standalone custom script that you would expose on your `package.json`

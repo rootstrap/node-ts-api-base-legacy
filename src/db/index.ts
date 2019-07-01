@@ -1,10 +1,13 @@
-import { createConnection } from 'typeorm';
-import User from '../user/User';
+import { createConnection, getConnectionOptions } from 'typeorm';
+import User from '../models/User';
+import entities from './Entities';
 
-export const entities = [
-  User,
-];
-
-const connection = () => createConnection();
+const connection = async () => {
+  const options = await getConnectionOptions();
+  createConnection({
+    ...options,
+    entities,
+  });
+};
 
 export default connection;

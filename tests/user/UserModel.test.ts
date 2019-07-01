@@ -1,5 +1,5 @@
 import { expect } from 'chai';
-import User from '../../src/user/User';
+import User from '../../src/models/User';
 import { fullUser } from '../fixtures/UserFixture';
 
 describe('User Model', () => {

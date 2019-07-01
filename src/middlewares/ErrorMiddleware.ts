@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import ApiError from '../errors/ApiError';
 import { HttpStatus } from '../constants/HttpStatus';
+import ApiError from '../errors/ApiError';
 
 export default (
   err: Error,
@@ -14,4 +14,4 @@ export default (
   } else {
     next(err);
   }
-}
+};

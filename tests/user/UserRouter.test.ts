@@ -3,7 +3,7 @@ import { expect } from 'chai';
 import express, { Express } from 'express';
 import sinon from 'sinon';
 import request from 'supertest';
-import User from '../../src/user/User';
+import User from '../../src/models/User';
 import userRouter from '../../src/user/UserRouter';
 import userService from '../../src/user/UserService';
 import { fullUser } from '../fixtures/UserFixture';
