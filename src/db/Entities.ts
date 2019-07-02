@@ -1,5 +1,5 @@
-import User from '../user/User';
+import User from '../models/User';
 
-export const Entities = [
+export default [
   User,
 ];

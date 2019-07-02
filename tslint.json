@@ -7,7 +7,14 @@
   "rules": {
     "quotemark": [true, "single"],
     "object-literal-sort-keys": [false],
-    "no-unused-expression": [false]
+    "no-unused-expression": [false],
+    "interface-name": [false],
+    "radix": [false]
   },
-  "rulesDirectory": []
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": [
+      "src/db/migrations/**.ts"
+    ]
+  }
 }

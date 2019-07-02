@@ -14,12 +14,11 @@
     "typeorm:drop": "typeorm schema:drop",
     "typeorm:logsync": "typeorm schema:log",
     "typeorm:migration:generate": "typeorm migration:generate",
+    "typeorm:migration:create": "typeorm migration:create",
     "db:sync": "npm-run-all lint tsc typeorm:sync",
     "db:drop": "npm-run-all lint tsc typeorm:drop",
     "db:migrate": "npm-run-all lint tsc typeorm:migrate",
     "db:logsync": "npm-run-all lint tsc typeorm:logsync",
-    "db:migration-generate": "typeorm migration:generate -n",
-    "db:migration-create": "typeorm migratation:create",
     "test": "mocha --require ts-node/register tests/**/**/*.*"
   },
   "keywords": [
