@@ -62,11 +62,11 @@ The following scripts are provided as tooling to interact with the database, tes
 ## Roadmap
 The following features are planned to be added:
 
-- [ ] CircleCI configuration.
-- [ ] Docker configuration.
+- [X] CircleCI configuration.
+- [X] Docker configuration.
 - [X] Error handling middleware.
 - [ ] Session management using Passport.
-- [ ] Background jobs example setup.
+- [X] Background jobs example setup.
 
 ## License
 
