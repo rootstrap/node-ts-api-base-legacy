@@ -38,9 +38,8 @@ The following scripts are provided as tooling to interact with the database, tes
 - `npm run db:drop` Drops the database
 - `npm run db:migrate` Runs migrations
 - `npm run db:logsync` Compares the current db schema to see if new changes would need to be applied when running db:sync.
-- `npm run db:migrate-generate`: Generates a migration by diffing the changes on your entities.
-- `npm run db:migrate-create`: Generates an empty migration file.
-- `npm run tests`: run tests.
+- `npm run test`: run tests.
+- `npm run test:coverage`: run tests with coverage metrics.
 
 ## Dependencies
 - `express`: http://expressjs.com/ for our routing layer.
