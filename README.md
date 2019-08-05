@@ -35,11 +35,11 @@ The following scripts are provided as tooling to interact with the database, tes
 - `npm run dev`: Spins up the TS compiler and the backend concurrently for developing using hot reload.
 - `npm run start`: Starts the backend (from the dist folder).
 - `npm run db:sync`: Syncs the database, it **should not be used in production, since it can override data**.
-- `npm run db:drop` Drops the database
-- `npm run db:migrate` Runs migrations
-- `npm run db:logsync` Compares the current db schema to see if new changes would need to be applied when running db:sync.
-- `npm run typeorm:migration:generate -- -n migrationName` Generates a new migration.
-- `npm run typeorm:migration:create -- -n migrationName` Creates a new empty migration.
+- `npm run db:drop`: Drops the database
+- `npm run db:migrate`: Runs migrations
+- `npm run db:logsync`: Compares the current db schema to see if new changes would need to be applied when running db:sync.
+- `npm run typeorm:migration:generate -- -n migrationName`: Generates a new migration.
+- `npm run typeorm:migration:create -- -n migrationName`: Creates a new empty migration.
 - `npm run test`: run tests.
 - `npm run test:coverage`: run tests with coverage metrics.
 
@@ -72,8 +72,6 @@ The following features are planned to be added:
 ## License
 
 **Node-ts-api-base** is available under the MIT license. See the LICENSE file for more info.
-
-**NOTE:** Remove the free LICENSE file for private projects or replace it with the corresponding license.
 
 ## Credits
 
