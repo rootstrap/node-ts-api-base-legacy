@@ -10,6 +10,5 @@ dist/*
 **/.vs
 **/.vscode
 !**/.vscode/tasks.json
-package-lock.json
 **/dump.rdb
 dump.rdb
