@@ -19,6 +19,7 @@
     "db:sync": "npm-run-all lint tsc typeorm:sync",
     "db:drop": "npm-run-all lint tsc typeorm:drop",
     "db:migrate": "npm-run-all lint tsc typeorm:migrate",
+    "db:revert": "typeorm migration:revert",
     "db:logsync": "npm-run-all lint tsc typeorm:logsync",
     "test:coverage": "nyc --reporter=text mocha --require ts-node/register tests/**/**/*.*",
     "test": "mocha --require ts-node/register tests/**/**/*.*"
@@ -44,7 +45,7 @@
     "pino-pretty": "^3.2.0",
     "pug": "^2.0.4",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.18"
+    "typeorm": "^0.2.22"
   },
   "devDependencies": {
     "@types/bull": "^3.5.15",

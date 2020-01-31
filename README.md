@@ -37,6 +37,7 @@ The following scripts are provided as tooling to interact with the database, tes
 - `npm run db:sync`: Syncs the database, it **should not be used in production, since it can override data**.
 - `npm run db:drop`: Drops the database
 - `npm run db:migrate`: Runs migrations
+- `npm run db:revert`: Revert latest executed migration
 - `npm run db:logsync`: Compares the current db schema to see if new changes would need to be applied when running db:sync.
 - `npm run typeorm:migration:generate -- -n migrationName`: Generates a new migration.
 - `npm run typeorm:migration:create -- -n migrationName`: Creates a new empty migration.
