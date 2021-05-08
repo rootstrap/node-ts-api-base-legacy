@@ -45,7 +45,7 @@
     "pino-pretty": "^3.2.0",
     "pug": "^2.0.4",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.2.22"
+    "typeorm": "^0.2.25"
   },
   "devDependencies": {
     "@types/bull": "^3.5.15",
